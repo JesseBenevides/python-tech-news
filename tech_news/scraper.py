@@ -1,6 +1,16 @@
+import requests
+import time
+
+
 # Requisito 1
 def fetch(url):
-    pass
+    time.sleep(1)
+    try:
+        res = requests.get(url, timeout=3)
+        res.raise_for_status()
+    except (requests.HTTPError, requests.ReadTimeout):
+        return None
+    return res.text
 
 
 # Requisito 2
