@@ -494,6 +494,8 @@ Agora que sabemos pegar páginas HTML, e descobrir o link de notícias, é hora 
 
 📌 Muita atenção aos tipos dos campos, por exemplo, `tags` é uma lista, enquanto que `comments_count` é numérico e `category` é uma string.
 
+📌 Os textos coletados em `title` e `summary` podem conter alguns caracteres vazios ao final. O teste espera que esses caracteres sejam removidos.
+
 📌 Para o campo `comments_count`, como há poucas notícias com comentários, utilizem [esta notícia](https://blog.betrybe.com/carreira/passos-fundamentais-para-aprender-a-programar/) como referência para scrape desta informação.
 
 📌 **É bom saber que** ao fazer scraping na vida real, você está sempre "refém" de quem construiu o site. Por exemplo, pode ser que nem toda notícia tenha **exatamente** o mesmo HTML/CSS e você precise de criatividade para contornar isso. 
